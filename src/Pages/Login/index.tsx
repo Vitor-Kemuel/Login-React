@@ -4,16 +4,15 @@ import Input from "../../Components/Input";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import { Container, LoginContainer, Column, Spacing, Title } from "./styles";
+import { Container, LoginContainer, Column, Spacing, Title, ButtonContainer } from "./styles";
 import { defaultValues, IFormLogin } from "./types";
-import React from "react";
 
 const schema = yup
   .object({
     email: yup.string().email("E-mail inválido").required("Campo obrigatório"),
     password: yup
       .string()
-      .min(6, "No minimo 6 caracteres")
+      .min(6, "Senha")
       .required("Campo obrigatório"),
   })
   .required();
@@ -50,7 +49,9 @@ const Login = () => {
             errorMessage={errors?.password?.message}
           />
           <Spacing />
-          <Button title="Entrar" />
+          <ButtonContainer>
+            <Button title="Entrar" />
+          </ButtonContainer>
         </Column>
       </LoginContainer>
     </Container>

@@ -15,7 +15,7 @@ export const LoginContainer = styled.div`
     max-width: 420px;
     background-color: #FFFFFF;
     border-radius: 8px;
-    padding: 20px;
+    padding: 40px 25px;
     flex:1;
     display: flex;
     align-items: flex-start;
@@ -25,7 +25,8 @@ export const LoginContainer = styled.div`
 export const Title = styled.h1`
     font-size: 42px;
     font-weight: 700;
-    color: #81259D;
+    color: #0DC8CD;
+    margin: 0 0 20px;
 `
 
 export const Row = styled.div`
@@ -44,4 +45,9 @@ export const Column = styled.div`
 `
 export const Spacing = styled.div`
     margin: 10px 0;
+`
+
+export const ButtonContainer = styled.div`
+    padding: 0 15%;
+    width: 100%;
 `

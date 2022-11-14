@@ -1,4 +1,3 @@
-import React from "react";
 import { ButtonContainer } from "./styles";
 import { IButtonProps } from "./types";
 
